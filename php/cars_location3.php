@@ -84,14 +84,14 @@ footer{
          
        
           <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Car Locations
+            <a class="dropdown-toggle" data-toggle="dropdown" href="">Car Locations
             <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="cars_locations.php">all</a></li>
-              <li><a href="#">Wien Mitte</a></li>
-              <li><a href="#">Karlsplatz</a></li>
-              <li><a href="#">Westbahnhof</a></li>
-              <li><a href="#">Hauptbahnhof</a></li>
+              <li><a href="cars_location1.php">Wien Mitte</a></li>
+              <li><a href="cars_location2.php">Karlsplatz</a></li>
+              <li><a href="cars_location3.php">Westbahnhof</a></li>
+              <li><a href="cars_location4.php">Hauptbahnhof</a></li>
             </ul>
           </li>
         </ul>
@@ -110,7 +110,7 @@ footer{
 		if ($tabelle->connect_error) {
 		    die("Connection failed: " . $tabelle->connect_error);
 		}
-		 $sql = "SELECT carId, carImage, carModel, cost, adress, city, zipCode FROM cars LEFT JOIN location ON cars.fk_locationId = location.locationId";
+		 $sql = "SELECT carId, carImage, carModel, cost, adress, city, zipCode FROM cars LEFT JOIN location ON cars.fk_locationId = location.locationId WHERE zipCode=1150";
 		 
 		 $result = mysqli_query($tabelle, $sql);
 

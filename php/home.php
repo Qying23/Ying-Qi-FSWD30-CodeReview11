@@ -36,16 +36,22 @@
 	    </div>
 	    <div class="collapse navbar-collapse" id="myNavbar">
 	      <ul class="nav navbar-nav">
-	        <li class="active"><a href="index.php">Home</a></li>
-	        <li>
-	        	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2" onclick="showofficelist()">Office List</button>
-	        </li>
-	        <li>
-	        	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2" onclick="showofficelist()">Car List</button>
-	        </li>
-	        <li>
-				<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2" onclick="showofficelist()">Car Locations</button>
-	        </li>
+	        <li class="active"><a href="home.php">Home</a></li>
+	       
+	         <li><a href="office_list.php">Office List</a></li>
+      		<li><a href="cars_list.php">Car List</a></li>
+	       
+	     
+	        <li class="dropdown">
+		        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Car Locations
+		        <span class="caret"></span></a>
+		        <ul class="dropdown-menu">
+		          <li><a href="#">Wien Mitte</a></li>
+		          <li><a href="#">Karlsplatz</a></li>
+		          <li><a href="#">Westbahnhof</a></li>
+		          <li><a href="#">Hauptbahnhof</a></li>
+		        </ul>
+		      </li>
 	      </ul>
 	      <ul class="nav navbar-nav navbar-right">
 	        <li><a class="nav-link" href="#">Hi <?php echo $userRow['userEmail']; ?></a></li>
