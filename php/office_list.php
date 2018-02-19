@@ -111,7 +111,7 @@ footer{
             die("Connection failed: " . $tabelle->connect_error);
         }
     
-        $sql = "SELECT name, adress, city, zipCode, phone, locaEmail FROM location";
+        $sql = "SELECT m.name,m.adress, m.city, m.zipCode, m.phone, m.locaEmail, COUNT(m.name) AS anzahl FROM location m, cars n WHERE m.locationId=n.fk_locationId GROUP BY m.name, m.adress, m.city, m.zipCode, m.phone, m.locaEmail";
         $result = mysqli_query($tabelle, $sql);
 
         echo "
@@ -136,7 +136,7 @@ footer{
               <td>". $row["zipCode"]." </td>
               <td>". $row["phone"] ."</td>
               <td>". $row["locaEmail"] ."</td>
-              <td>". $row[""] ."</td>
+              <td>". $row["anzahl"] ."</td>
               </tr>
             
           ";
@@ -148,6 +148,7 @@ footer{
         // Close connection
         mysqli_close($tabelle);
       ?> 
+
       </div>
     
     </div>
