@@ -21,6 +21,17 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+	  body{
+	  background-color: #e6f2ff ;
+	}
+		.navbar{
+			margin-bottom: 0px;
+		}
+		footer{
+	  padding: 3%;
+	}
+  </style>
 </head>
 <body>
 
@@ -46,10 +57,11 @@
 		        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Car Locations
 		        <span class="caret"></span></a>
 		        <ul class="dropdown-menu">
-		          <li><a href="#">Wien Mitte</a></li>
-		          <li><a href="#">Karlsplatz</a></li>
-		          <li><a href="#">Westbahnhof</a></li>
-		          <li><a href="#">Hauptbahnhof</a></li>
+		          <li><a href="cars_locations.php">all</a></li>
+	              <li><a href="cars_location1.php">Wien Mitte</a></li>
+	              <li><a href="cars_location2.php">Karlsplatz</a></li>
+	              <li><a href="cars_location3.php">Westbahnhof</a></li>
+	              <li><a href="cars_location4.php">Hauptbahnhof</a></li>
 		        </ul>
 		      </li>
 	      </ul>
@@ -60,30 +72,16 @@
 	    </div>
 	  </div>
 	</nav>	
-		
-	<hr>
-  <!-- Modal -->
-	  	<div class="modal fade" id="myModal2" role="dialog">
-	    	<div class="modal-dialog">
-	   
-		      <!-- Modal content-->
-		      <div class="modal-content">
-		        <div class="modal-header">
-		          <button type="button" class="close" data-dismiss="modal">&times;</button>
-		          <h4 class="modal-title"> List</h4>
-		        </div>
-		        <div class="modal-body">
-		          	<p id="demo"></p>
-		        </div>
-		        <div class="modal-footer">
-		          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		        </div>
-		      </div>
-	    </div>
+  
+	
+		<img src="https://blog.mietwagen-check.de/assets-image/768x420/bf83c520-8d70-435a-8313-247fb10e71b7.jpg" width="100%">
+	
 
-	    <footer class="bg-info" >
-      		<center>copyright by Ying Qi 2018</center>
-    	</footer>
+   		<footer>
+			<center class="container">
+				<p class="m-0 text-center">Copyright © Ying Qi 2018</p>
+			</center>
+		</footer>
 
 
     </body>

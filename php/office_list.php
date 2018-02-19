@@ -111,7 +111,7 @@ footer{
             die("Connection failed: " . $tabelle->connect_error);
         }
     
-        $sql = "SELECT name, adress, city, zipCode,city, locaEmail FROM location";
+        $sql = "SELECT name, adress, city, zipCode, phone, locaEmail FROM location";
         $result = mysqli_query($tabelle, $sql);
 
         echo "
@@ -134,7 +134,7 @@ footer{
               <td>". $row["adress"] ."</td>
               <td>". $row["city"] ."</td>
               <td>". $row["zipCode"]." </td>
-              <td>". $row["city"] ."</td>
+              <td>". $row["phone"] ."</td>
               <td>". $row["locaEmail"] ."</td>
               <td>". $row[""] ."</td>
               </tr>
