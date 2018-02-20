@@ -88,10 +88,10 @@ footer{
             <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="cars_locations.php">all</a></li>
-              <li><a href="#">Wien Mitte</a></li>
-              <li><a href="#">Karlsplatz</a></li>
-              <li><a href="#">Westbahnhof</a></li>
-              <li><a href="#">Hauptbahnhof</a></li>
+              <li><a href="cars_location1.php">Wien Mitte</a></li>
+              <li><a href="cars_location2.php">Karlsplatz</a></li>
+              <li><a href="cars_location3.php">Westbahnhof</a></li>
+              <li><a href="cars_location4.php">Hauptbahnhof</a></li>
             </ul>
           </li>
         </ul>

@@ -81,17 +81,16 @@ h1{
 	       
 	     
 	        <li class="dropdown">
-		        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Car Locations
-		        <span class="caret"></span></a>
-		        <ul class="dropdown-menu">
-		        	<li><a href="cars_locations.php">all</a></li>
-		          	<li><a href="#">Wien Mitte</a></li>
-		          	<li><a href="#">Karlsplatz</a></li>
-		          	<li><a href="#">Westbahnhof</a></li>
-		          	<li><a href="#">Hauptbahnhof</a></li>
-		        </ul>
-		      </li>
-	      </ul>
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Car Locations
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="cars_locations.php">all</a></li>
+              <li><a href="cars_location1.php">Wien Mitte</a></li>
+              <li><a href="cars_location2.php">Karlsplatz</a></li>
+              <li><a href="cars_location3.php">Westbahnhof</a></li>
+              <li><a href="cars_location4.php">Hauptbahnhof</a></li>
+            </ul>
+          </li>
 	      <ul class="nav navbar-nav navbar-right">
 	        <li><a href="logout.php?logout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
 	      </ul>

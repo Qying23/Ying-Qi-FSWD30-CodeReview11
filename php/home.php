@@ -54,7 +54,7 @@
 	       
 	     
 	        <li class="dropdown">
-		        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Car Locations
+		        <a class="dropdown-toggle" data-toggle="dropdown" >Car Locations
 		        <span class="caret"></span></a>
 		        <ul class="dropdown-menu">
 		          <li><a href="cars_locations.php">all</a></li>
